@@ -28,6 +28,18 @@ class SocialMediaIcons extends StatelessWidget {
           icon: FontAwesomeIcons.twitter,
           link: SocialLinks.twitter,
         ),
+        SocialMediaIconBtn(
+          icon: FontAwesomeIcons.whatsapp,
+          link: SocialLinks.twitter,
+        ),
+        SocialMediaIconBtn(
+          icon: FontAwesomeIcons.telegram,
+          link: SocialLinks.twitter,
+        ),
+        SocialMediaIconBtn(
+          icon: FontAwesomeIcons.github,
+          link: SocialLinks.twitter,
+        ),
       ],
     );
   }

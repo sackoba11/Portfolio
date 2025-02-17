@@ -14,10 +14,9 @@ class ContactSection extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: 80),
       child: context.width > DeviceType.ipad.getMaxWidth()
           ? const Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Expanded(
-                  child: ContactIntro(),
+                  child: Center(child: ContactIntro()),
                 ),
                 SizedBox(width: 32),
                 Expanded(child: ContactForm()),
