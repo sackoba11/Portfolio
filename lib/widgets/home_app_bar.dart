@@ -18,6 +18,8 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return Container(
       color: AppColors.appBarColor,
+      margin: EdgeInsets.only(
+          top: context.width > DeviceType.ipad.getMaxWidth() ? 0 : 20),
       padding: EdgeInsets.symmetric(
         horizontal: _getHorizontalPadding(context),
       ),
