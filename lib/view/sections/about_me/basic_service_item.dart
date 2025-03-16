@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:portfolio/core/models/competence.dart';
 
 import '../../../../core/utils/app_colors.dart';
 import '../../../../core/utils/app_enums.dart';
 import '../../../../core/utils/app_extensions.dart';
 import '../../../../core/utils/app_styles.dart';
-import '../../../core/models/custom_service.dart';
 
 class BasicServiceItem extends StatefulWidget {
-  const BasicServiceItem({super.key, required this.service});
+  const BasicServiceItem({super.key, required this.competence});
 
-  final CustomService service;
+  final Competence competence;
 
   @override
   State<BasicServiceItem> createState() => _BasicServiceItemState();
@@ -31,17 +31,13 @@ class _BasicServiceItemState extends State<BasicServiceItem> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SvgPicture.asset(
-              widget.service.logo,
-              height: 48,
-            ),
+            SvgPicture.asset(widget.competence.logo, height: 40),
             const SizedBox(height: 16),
             if (context.width > DeviceType.mobile.getMinWidth())
               FittedBox(
                 child: Text(
-                  widget.service.service,
-                  style: AppStyles.s24,
-                  // minFontSize: 8,
+                  widget.competence.competence,
+                  style: AppStyles.s14,
                   textAlign: TextAlign.center,
                 ),
               ),

@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/models/competence.dart';
 
-import '../../../../core/utils/app_constants.dart';
 import '../../../../core/utils/app_enums.dart';
 import '../../../../core/utils/app_extensions.dart';
 import 'basic_service_item.dart';
 
 class BasicServicesGrid extends StatelessWidget {
-  const BasicServicesGrid({super.key});
+  const BasicServicesGrid({super.key, required this.competence});
+  final List<Competence> competence;
 
   @override
   Widget build(BuildContext context) {
@@ -15,29 +16,32 @@ class BasicServicesGrid extends StatelessWidget {
       physics: const NeverScrollableScrollPhysics(),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: _getCrossAxisCount(context.width),
-        crossAxisSpacing: 16,
+        crossAxisSpacing: 17,
         childAspectRatio: _getAspectRatio(context.width),
-        mainAxisSpacing: 16,
+        mainAxisSpacing: 15,
       ),
       itemBuilder: (context, index) {
         return BasicServiceItem(
-          service: AppConstants.services[index],
+          competence: competence[index],
         );
       },
-      itemCount: AppConstants.services.length,
+      itemCount: competence.length,
     );
   }
 
   int _getCrossAxisCount(double deviceWidth) {
-    int numOfServices = AppConstants.services.length;
+    int numOfServices = competence.length;
     if (deviceWidth < DeviceType.mobile.getMaxWidth()) {
       return 1;
     } else if (deviceWidth < DeviceType.ipad.getMaxWidth()) {
       return 2;
     } else if (deviceWidth < DeviceType.smallScreenLaptop.getMaxWidth()) {
       return 3;
+    } else if (deviceWidth > DeviceType.smallScreenLaptop.getMaxWidth() &&
+        deviceWidth < DeviceType.largeScreenDesktop.getMaxWidth()) {
+      return 5;
     } else {
-      return numOfServices > 4 ? 4 : numOfServices;
+      return numOfServices > 1 ? 6 : numOfServices;
     }
   }
 

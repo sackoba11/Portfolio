@@ -8,7 +8,7 @@ extension AppBarHeaderExtension on AppBarHeaders {
       case AppBarHeaders.home:
         return 'Accueil';
       case AppBarHeaders.aboutMe:
-        return 'Á propos';
+        return 'À propos';
       case AppBarHeaders.projects:
         return 'Projets';
       case AppBarHeaders.contact:

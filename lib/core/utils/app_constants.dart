@@ -1,9 +1,37 @@
+import '../models/competence.dart';
 import '../models/custom_service.dart';
 import '../models/project.dart';
 import 'app_assets.dart';
 
 abstract class AppConstants {
   static const double appBarHeight = 80;
+  static const List<Competence> langages = [
+    Competence(competence: 'Dart', logo: AppAssets.dart),
+    Competence(competence: 'JavaScript', logo: AppAssets.javascript),
+    Competence(competence: 'TypeScript', logo: AppAssets.typescript),
+    Competence(competence: 'Python', logo: AppAssets.python),
+    Competence(competence: 'SQL', logo: AppAssets.sql),
+    Competence(competence: 'Java', logo: AppAssets.java),
+  ];
+
+  static const List<Competence> framework = [
+    Competence(competence: 'Flutter', logo: AppAssets.flutter),
+    Competence(competence: 'React Js', logo: AppAssets.react),
+    Competence(competence: 'Styled Components', logo: AppAssets.styled),
+  ];
+  static const List<Competence> backend = [
+    Competence(competence: 'Firebase', logo: AppAssets.firebase),
+    Competence(competence: 'MongoDB', logo: AppAssets.mongodb),
+    Competence(competence: 'PostgreSQL', logo: AppAssets.postgresql),
+    Competence(competence: 'REST API', logo: AppAssets.rest),
+    Competence(competence: 'GraphQL', logo: AppAssets.graphql),
+    Competence(competence: 'Google Cloud Platform', logo: AppAssets.google)
+  ];
+  static const List<Competence> methodologies = [
+    Competence(competence: 'Git, GitHub', logo: AppAssets.github),
+    Competence(competence: 'Docker', logo: AppAssets.docker),
+    Competence(competence: 'Méthodologie Agile', logo: AppAssets.agile)
+  ];
   static const List<CustomService> services = [
     CustomService(
       service: 'MOBILE DEVELOPMENT',
@@ -16,6 +44,36 @@ abstract class AppConstants {
       logo: AppAssets.uiDesignLogo,
       description:
           'I design beautiful web interfaces with Figma and Adobe XD. I design beautiful web interfaces with Figma and Adobe XD.',
+    ),
+    CustomService(
+      service: 'WEB SCRAPING',
+      logo: AppAssets.scrappingLogo,
+      description:
+          'I can collect content and data from the internet then manipulate and analyze as needed.',
+    ),
+    CustomService(
+      service: 'WEB SCRAPING',
+      logo: AppAssets.scrappingLogo,
+      description:
+          'I can collect content and data from the internet then manipulate and analyze as needed.',
+    ),
+    CustomService(
+      service: 'WEB SCRAPING',
+      logo: AppAssets.scrappingLogo,
+      description:
+          'I can collect content and data from the internet then manipulate and analyze as needed.',
+    ),
+    CustomService(
+      service: 'WEB SCRAPING',
+      logo: AppAssets.scrappingLogo,
+      description:
+          'I can collect content and data from the internet then manipulate and analyze as needed.',
+    ),
+    CustomService(
+      service: 'WEB SCRAPING',
+      logo: AppAssets.scrappingLogo,
+      description:
+          'I can collect content and data from the internet then manipulate and analyze as needed.',
     ),
     CustomService(
       service: 'WEB SCRAPING',

@@ -9,6 +9,12 @@ abstract class AppStrings {
   static const String experienceMsg =
       "Années d'expérience, spécialisé dans la création d'applications, tout en garantissant une expérience web fluide pour les utilisateurs finaux.";
   static const String servicesIOffer = "Les services que j'offre :";
+  static const String competences = "🛠️ COMPÉTENCES TECHNIQUES";
+  static const String langages = "Langages :";
+  static const String frontend = "Front-end :";
+  static const String backend = "Back-end :";
+  static const String methodologies = "Outils & Méthodologies :";
+  static const String formation = "FORMATION & CERTIFICATIONS  :";
   static const String featuredProjects = 'Projets vedettes';
   static const String projectsMsg =
       "J'ai réalisé et participé à de nombreux projets qui prouvent ma capacité à fournir des solutions créatives et de haute qualité, et à les finaliser de manière quasi complète avec une excellente expérience utilisateur, sans aucun problème pour les utilisateurs.";
