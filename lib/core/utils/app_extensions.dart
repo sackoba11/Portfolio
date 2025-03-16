@@ -6,11 +6,11 @@ extension AppBarHeaderExtension on AppBarHeaders {
   String getString() {
     switch (this) {
       case AppBarHeaders.home:
-        return 'Home';
+        return 'Accueil';
       case AppBarHeaders.aboutMe:
-        return 'About me';
+        return 'Á propos';
       case AppBarHeaders.projects:
-        return 'Projects';
+        return 'Projets';
       case AppBarHeaders.contact:
         return 'Contact';
     }
@@ -50,7 +50,7 @@ extension DeviceTypeExtension on DeviceType {
       case DeviceType.largeScreenDesktop:
         return 1200;
       case DeviceType.extraLargeTV:
-        return 3840; // any number more than 1200
+        return 3840;
     }
   }
 }

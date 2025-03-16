@@ -42,8 +42,9 @@ class _HomeBodyState extends State<HomeBody> {
       if (_controller.position.extentAfter == 0.0) {
         context.read<HomeBloc>().add(ChangeAppBarHeadersColorByColor(3));
       } else if (controllerHeight < introHeight) {
-        context.read<HomeBloc>().add(ChangeAppBarHeadersColorByColor(0));
-      } else if (controllerHeight < (introHeight + aboutHeight)) {
+        context.read<HomeBloc>().add(ChangeAppBarHeadersColorByColor(0)); 
+
+      } else if (controllerHeight < (introHeight + aboutHeight)) {  
         context.read<HomeBloc>().add(ChangeAppBarHeadersColorByColor(1));
       } else if (controllerHeight <
           (introHeight + aboutHeight + projectHeight)) {
@@ -68,10 +69,8 @@ class _HomeBodyState extends State<HomeBody> {
           Navigator.of(context).maybePop();
           const duration = Duration(milliseconds: 300);
           if (state.index == 0) {
-            Scrollable.ensureVisible(
-              introKey.currentContext!,
-              duration: duration,
-            );
+            Scrollable.ensureVisible(introKey.currentContext!,
+                duration: duration);
           }
           if (state.index == 1) {
             Scrollable.ensureVisible(

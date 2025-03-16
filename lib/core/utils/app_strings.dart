@@ -1,18 +1,18 @@
 abstract class AppStrings {
-  static const String developerName = 'Allou-Badra Sacko';
-  static const String helloIM = 'Hello, i’m';
+  static const String helloIM = 'Salut, je suis';
+  static const String developerName = 'Allou-Badra SACKO';
   static const String introMsg =
-      "Flutter developer with +2 years of experience. I have completed many projects that prove my ability to provide creative and high-quality solutions.";
+      "Développeur Full Stack, J'adore créer des applications modernes et performantes.";
   static String aboutMeMsg =
-      "I'm a Flutter developer with a good understanding of the Flutter framework, I have experience in UI design, API integration, clean code writing and knowledge of solid principles and clean architecture. I have completed many projects that prove my ability to provide creative and high-quality solutions and finish them in an almost complete way with a great user experience without any problems facing users";
+      "Je suis un développeur web & mobile passionné par Flutter avec une bonne compréhension du framework. J'ai de l'expérience en conception d'interfaces utilisateur, en intégration d'API, en écriture de code propre et une connaissance des principes SOLID et de l'architecture propre (clean architecture). Spécialisé en Flutter & Dart, je m'efforce de créer des solutions robustes qui résolvent des problèmes concrets.";
   static const String numOfExperience = '2+';
   static const String experienceMsg =
-      'Years of experience, Specialized in building apps, while ensuring a seamless web experience for end users.';
-  static const String servicesIOffer = 'The services i offer:';
-  static const String featuredProjects = 'Featured projects';
+      "Années d'expérience, spécialisé dans la création d'applications, tout en garantissant une expérience web fluide pour les utilisateurs finaux.";
+  static const String servicesIOffer = "Les services que j'offre :";
+  static const String featuredProjects = 'Projets vedettes';
   static const String projectsMsg =
-      "I have completed many projects that prove my ability to provide creative and high-quality solutions and finish them in an almost complete way with a great user experience without any problems facing users.";
+      "J'ai réalisé et participé à de nombreux projets qui prouvent ma capacité à fournir des solutions créatives et de haute qualité, et à les finaliser de manière quasi complète avec une excellente expérience utilisateur, sans aucun problème pour les utilisateurs.";
   static const String contactMsg =
-      "For any service and work you can contact with me by send an email or by our social media accounts.";
-  static const String contactWithMe = 'Contact with me';
+      "Pour tout service et collaboration, vous pouvez me contacter en envoyant un email ou via nos comptes de médias sociaux.";
+  static const String contactWithMe = 'Contacts';
 }
