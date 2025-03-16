@@ -51,36 +51,6 @@ abstract class AppConstants {
       description:
           'I can collect content and data from the internet then manipulate and analyze as needed.',
     ),
-    CustomService(
-      service: 'WEB SCRAPING',
-      logo: AppAssets.scrappingLogo,
-      description:
-          'I can collect content and data from the internet then manipulate and analyze as needed.',
-    ),
-    CustomService(
-      service: 'WEB SCRAPING',
-      logo: AppAssets.scrappingLogo,
-      description:
-          'I can collect content and data from the internet then manipulate and analyze as needed.',
-    ),
-    CustomService(
-      service: 'WEB SCRAPING',
-      logo: AppAssets.scrappingLogo,
-      description:
-          'I can collect content and data from the internet then manipulate and analyze as needed.',
-    ),
-    CustomService(
-      service: 'WEB SCRAPING',
-      logo: AppAssets.scrappingLogo,
-      description:
-          'I can collect content and data from the internet then manipulate and analyze as needed.',
-    ),
-    CustomService(
-      service: 'WEB SCRAPING',
-      logo: AppAssets.scrappingLogo,
-      description:
-          'I can collect content and data from the internet then manipulate and analyze as needed.',
-    ),
   ];
   static const List<Project> projects = [
     Project(

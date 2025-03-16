@@ -12,7 +12,7 @@ class CircleImageBorder extends StatelessWidget {
     final responsiveSize = ResponsiveSize(
       deviceWidth: context.width,
       mobileSize: context.width * .62,
-      ipadSize: context.width * .4,
+      ipadSize: context.width * .34,
       smallScreenSize: context.width * .29,
     );
     return Container(

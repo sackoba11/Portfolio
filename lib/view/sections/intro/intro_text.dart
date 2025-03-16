@@ -28,7 +28,7 @@ class IntroText extends StatelessWidget {
         const SizedBox(height: 6),
         Text(
           AppStrings.developerName,
-          style: context.width < DeviceType.ipad.getMaxWidth()
+          style: context.width < DeviceType.smallScreenLaptop.getMaxWidth()
               ? AppStyles.s24
               : AppStyles.s52,
           textAlign: _getTextAlign(context.width),
