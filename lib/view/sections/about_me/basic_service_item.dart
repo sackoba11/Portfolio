@@ -17,13 +17,14 @@ class BasicServiceItem extends StatefulWidget {
 }
 
 class _BasicServiceItemState extends State<BasicServiceItem> {
-  Color itemColor = AppColors.lowPriority;
+  Color itemColor = AppColors.scaffoldColor;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(10),
-      color: itemColor,
+      decoration: BoxDecoration(
+          color: itemColor, borderRadius: BorderRadius.circular(30)),
       child: MouseRegion(
         onEnter: _onEnter,
         onExit: _onExit,
@@ -48,7 +49,7 @@ class _BasicServiceItemState extends State<BasicServiceItem> {
   }
 
   void _onExit(event) {
-    setState(() => itemColor = AppColors.lowPriority);
+    setState(() => itemColor = AppColors.secondaryColor);
   }
 
   void _onEnter(event) {
