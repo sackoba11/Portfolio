@@ -1,10 +1,17 @@
 import '../models/competence.dart';
 import '../models/custom_service.dart';
+import '../models/formation.dart';
 import '../models/project.dart';
 import 'app_assets.dart';
 
 abstract class AppConstants {
   static const double appBarHeight = 80;
+  static const List<Formation> formations = [
+    Formation(
+        title: 'Master de Bases de données et Génie Logiciel',
+        date: '2023',
+        school: 'Université Félix Houphouët Boigny (UFR Maths Info)'),
+  ];
   static const List<Competence> langages = [
     Competence(competence: 'Dart', logo: AppAssets.dart),
     Competence(competence: 'JavaScript', logo: AppAssets.javascript),

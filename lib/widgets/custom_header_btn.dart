@@ -17,6 +17,9 @@ class CustomHeaderBtn extends StatelessWidget {
     return TextButton(
       onPressed: () {
         context.read<HomeBloc>().add(ChangeAppBarHeadersIndex(headerIndex));
+        context.read<HomeBloc>().add(
+              ChangeAppBarHeadersAxis(AppBarHeadersAxis.horizontal),
+            );
       },
       style: TextButton.styleFrom(
         textStyle: AppStyles.s16,
