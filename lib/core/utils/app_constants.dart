@@ -1,11 +1,20 @@
+import 'package:portfolio/core/models/domaine.dart';
+
 import '../models/competence.dart';
 import '../models/custom_service.dart';
 import '../models/formation.dart';
 import '../models/project.dart';
 import 'app_assets.dart';
+import 'app_strings.dart';
 
 abstract class AppConstants {
   static const double appBarHeight = 80;
+  static const List<Domaine> domaines = [
+    Domaine(titre: AppStrings.langages, competences: langages),
+    Domaine(titre: AppStrings.frontend, competences: framework),
+    Domaine(titre: AppStrings.backend, competences: backend),
+    Domaine(titre: AppStrings.methodologies, competences: methodologies),
+  ];
   static const List<Formation> formations = [
     Formation(
         title: 'Master de Bases de données et Génie Logiciel',
@@ -32,12 +41,12 @@ abstract class AppConstants {
     Competence(competence: 'PostgreSQL', logo: AppAssets.postgresql),
     Competence(competence: 'REST API', logo: AppAssets.rest),
     Competence(competence: 'GraphQL', logo: AppAssets.graphql),
-    Competence(competence: 'Google Cloud Platform', logo: AppAssets.google)
+    Competence(competence: 'GCP', logo: AppAssets.google)
   ];
   static const List<Competence> methodologies = [
     Competence(competence: 'Git, GitHub', logo: AppAssets.github),
     Competence(competence: 'Docker', logo: AppAssets.docker),
-    Competence(competence: 'Méthodologie Agile', logo: AppAssets.agile)
+    Competence(competence: 'Agile', logo: AppAssets.agile)
   ];
   static const List<CustomService> services = [
     CustomService(

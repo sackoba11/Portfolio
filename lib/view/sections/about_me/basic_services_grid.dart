@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/core/models/competence.dart';
+import 'package:portfolio/core/models/domaine.dart';
 
 import '../../../../core/utils/app_enums.dart';
 import '../../../../core/utils/app_extensions.dart';
 import 'basic_service_item.dart';
 
 class BasicServicesGrid extends StatelessWidget {
-  const BasicServicesGrid({super.key, required this.competence});
-  final List<Competence> competence;
+  const BasicServicesGrid({super.key, required this.domaine});
+  final List<Domaine> domaine;
 
   @override
   Widget build(BuildContext context) {
@@ -22,26 +22,23 @@ class BasicServicesGrid extends StatelessWidget {
       ),
       itemBuilder: (context, index) {
         return BasicServiceItem(
-          competence: competence[index],
+          competence: domaine[index],
         );
       },
-      itemCount: competence.length,
+      itemCount: domaine.length,
     );
   }
 
   int _getCrossAxisCount(double deviceWidth) {
-    int numOfServices = competence.length;
+    int numOfServices = domaine.length;
     if (deviceWidth < DeviceType.mobile.getMaxWidth()) {
       return 1;
     } else if (deviceWidth < DeviceType.ipad.getMaxWidth()) {
       return 2;
     } else if (deviceWidth < DeviceType.smallScreenLaptop.getMaxWidth()) {
       return 3;
-    } else if (deviceWidth > DeviceType.smallScreenLaptop.getMaxWidth() &&
-        deviceWidth < DeviceType.largeScreenDesktop.getMaxWidth()) {
-      return 5;
     } else {
-      return numOfServices > 1 ? 6 : numOfServices;
+      return numOfServices > 4 ? 4 : numOfServices;
     }
   }
 

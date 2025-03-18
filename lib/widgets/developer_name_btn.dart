@@ -19,7 +19,7 @@ class DeveloperNameBtn extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 13),
         child: SizedBox(
           width: context.width < DeviceType.ipad.getMaxWidth()
-              ? context.width * .27
+              ? context.width * .4 
               : context.width * .14,
           child: FittedBox(
             alignment: Alignment.topLeft,

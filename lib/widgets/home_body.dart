@@ -10,7 +10,7 @@ import '../view/sections/projects/projects_section.dart';
 import 'vertical_headers_builder.dart';
 
 class HomeBody extends StatefulWidget {
-  const HomeBody({super.key});
+  const  HomeBody({super.key});
 
   @override
   State<HomeBody> createState() => _HomeBodyState();
@@ -42,9 +42,8 @@ class _HomeBodyState extends State<HomeBody> {
       if (_controller.position.extentAfter == 0.0) {
         context.read<HomeBloc>().add(ChangeAppBarHeadersColorByColor(3));
       } else if (controllerHeight < introHeight) {
-        context.read<HomeBloc>().add(ChangeAppBarHeadersColorByColor(0)); 
-
-      } else if (controllerHeight < (introHeight + aboutHeight)) {  
+        context.read<HomeBloc>().add(ChangeAppBarHeadersColorByColor(0));
+      } else if (controllerHeight < (introHeight + aboutHeight)) {
         context.read<HomeBloc>().add(ChangeAppBarHeadersColorByColor(1));
       } else if (controllerHeight <
           (introHeight + aboutHeight + projectHeight)) {

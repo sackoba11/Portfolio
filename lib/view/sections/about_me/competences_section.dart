@@ -20,41 +20,41 @@ class CompetencesSection extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 32),
-        Text(
-          AppStrings.langages,
-          style: AppStyles.s24,
-        ),
+        // Text(
+        //   AppStrings.langages,
+        //   style: AppStyles.s24,
+        // ),
         const SizedBox(height: 20),
         BasicServicesGrid(
-          competence: AppConstants.langages,
+          domaine: AppConstants.domaines,
         ),
         const SizedBox(height: 32),
-        Text(
-          AppStrings.frontend,
-          style: AppStyles.s24,
-        ),
-        const SizedBox(height: 20),
-        const BasicServicesGrid(
-          competence: AppConstants.framework,
-        ),
-        const SizedBox(height: 32),
-        Text(
-          AppStrings.backend,
-          style: AppStyles.s24,
-        ),
-        const SizedBox(height: 20),
-        const BasicServicesGrid(
-          competence: AppConstants.backend,
-        ),
-        const SizedBox(height: 32),
-        Text(
-          AppStrings.methodologies,
-          style: AppStyles.s24,
-        ),
-        const SizedBox(height: 20),
-        const BasicServicesGrid(
-          competence: AppConstants.methodologies,
-        ),
+        // Text(
+        //   AppStrings.frontend,
+        //   style: AppStyles.s24,
+        // ),
+        // const SizedBox(height: 20),
+        // const BasicServicesGrid(
+        //   domaine: AppConstants.framework,
+        // ),
+        // const SizedBox(height: 32),
+        // Text(
+        //   AppStrings.backend,
+        //   style: AppStyles.s24,
+        // ),
+        // const SizedBox(height: 20),
+        // const BasicServicesGrid(
+        //   domaine: AppConstants.backend,
+        // ),
+        // const SizedBox(height: 32),
+        // Text(
+        //   AppStrings.methodologies,
+        //   style: AppStyles.s24,
+        // ),
+        // const SizedBox(height: 20),
+        // const BasicServicesGrid(
+        //   domaine: AppConstants.methodologies,
+        // ),
       ],
     );
   }
