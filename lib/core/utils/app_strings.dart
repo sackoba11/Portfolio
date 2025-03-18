@@ -15,6 +15,7 @@ abstract class AppStrings {
   static const String frontend = "Front-end :";
   static const String backend = "Back-end :";
   static const String methodologies = "Outils :";
+  static const String cv = 'Consulter mon Curriculum vitae';
   static const String formation = "FORMATION & CERTIFICATIONS  :";
   static const String featuredProjects = 'PROJETS VEDETTES';
   static const String projectsMsg =

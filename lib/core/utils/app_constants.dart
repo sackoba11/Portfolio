@@ -9,18 +9,24 @@ import 'app_strings.dart';
 
 abstract class AppConstants {
   static const double appBarHeight = 80;
+
+  //Domaines
   static const List<Domaine> domaines = [
     Domaine(titre: AppStrings.langages, competences: langages),
     Domaine(titre: AppStrings.frontend, competences: framework),
     Domaine(titre: AppStrings.backend, competences: backend),
     Domaine(titre: AppStrings.methodologies, competences: methodologies),
   ];
+
+  //Educations
   static const List<Formation> formations = [
     Formation(
         title: 'Master de Bases de données et Génie Logiciel',
         date: '2023',
         school: 'Université Félix Houphouët Boigny (UFR Maths Info)'),
   ];
+
+  //Competences
   static const List<Competence> langages = [
     Competence(competence: 'Dart', logo: AppAssets.dart),
     Competence(competence: 'JavaScript', logo: AppAssets.javascript),
@@ -29,7 +35,6 @@ abstract class AppConstants {
     Competence(competence: 'SQL', logo: AppAssets.sql),
     Competence(competence: 'Java', logo: AppAssets.java),
   ];
-
   static const List<Competence> framework = [
     Competence(competence: 'Flutter', logo: AppAssets.flutter),
     Competence(competence: 'React Js', logo: AppAssets.react),
@@ -48,6 +53,8 @@ abstract class AppConstants {
     Competence(competence: 'Docker', logo: AppAssets.docker),
     Competence(competence: 'Agile', logo: AppAssets.agile)
   ];
+
+  // Services
   static const List<CustomService> services = [
     CustomService(
       service: 'MOBILE DEVELOPMENT',
@@ -68,6 +75,8 @@ abstract class AppConstants {
           'I can collect content and data from the internet then manipulate and analyze as needed.',
     ),
   ];
+
+  //Projects
   static const List<Project> projects = [
     Project(
       name: 'Live score',

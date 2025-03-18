@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/utils/app_strings.dart';
 import 'package:portfolio/view/sections/about_me/competences_section.dart';
 
 import '../../../../core/utils/app_colors.dart';
@@ -28,8 +29,13 @@ class AboutMeSection extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           const ExperienceInfo(),
-          const SizedBox(height: 58),
+          const SizedBox(height: 20),
           const CompetencesSection(),
+          TextButton(
+            style: ButtonStyle(),
+            onPressed: () {},
+            child: Text(AppStrings.cv),
+          )
           // const SizedBox(height: 80),
           // const DetailedServicesSection(),
         ],
