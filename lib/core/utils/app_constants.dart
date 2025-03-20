@@ -2,28 +2,20 @@ import 'package:portfolio/core/models/domaine.dart';
 
 import '../models/competence.dart';
 import '../models/custom_service.dart';
-import '../models/formation.dart';
 import '../models/project.dart';
 import 'app_assets.dart';
 import 'app_strings.dart';
 
 abstract class AppConstants {
   static const double appBarHeight = 80;
-
+  static const String cvLink =
+      'https://drive.google.com/uc?id=1ITN6reINiIaM-6j3QqxrwtvADZgLNvwB';
   //Domaines
   static const List<Domaine> domaines = [
     Domaine(titre: AppStrings.langages, competences: langages),
     Domaine(titre: AppStrings.frontend, competences: framework),
     Domaine(titre: AppStrings.backend, competences: backend),
     Domaine(titre: AppStrings.methodologies, competences: methodologies),
-  ];
-
-  //Educations
-  static const List<Formation> formations = [
-    Formation(
-        title: 'Master de Bases de données et Génie Logiciel',
-        date: '2023',
-        school: 'Université Félix Houphouët Boigny (UFR Maths Info)'),
   ];
 
   //Competences
@@ -79,7 +71,7 @@ abstract class AppConstants {
   //Projects
   static const List<Project> projects = [
     Project(
-      name: 'Live score',
+      name: 'Mobility',
       imageUrl:
           'https://drive.google.com/uc?id=1ITN6reINiIaM-6j3QqxrwtvADZgLNvwB',
       description:
@@ -88,7 +80,7 @@ abstract class AppConstants {
       previewLink: 'https://youtu.be/HSIosFd6Sys',
     ),
     Project(
-      name: 'Instagram clone',
+      name: 'Dashboard Mobility',
       imageUrl:
           'https://drive.google.com/uc?id=1qNFCNYdUo7o36ythQtjaSrv7L0NV_Vnv',
       description:
@@ -98,7 +90,7 @@ abstract class AppConstants {
       previewLink: 'https://youtu.be/MuuVjqrR49g',
     ),
     Project(
-      name: 'TikTok Downloader',
+      name: 'ChatBox',
       imageUrl:
           'https://drive.google.com/uc?id=1SypuIPVdokg0O4DYoYdswRowlIJAGgIq',
       description:

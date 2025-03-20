@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/core/utils/app_constants.dart';
 import 'package:portfolio/core/utils/app_strings.dart';
 import 'package:portfolio/view/sections/about_me/competences_section.dart';
+import 'package:universal_html/html.dart' as html;
 
 import '../../../../core/utils/app_colors.dart';
 import '../../../../core/utils/app_extensions.dart';
@@ -33,7 +35,9 @@ class AboutMeSection extends StatelessWidget {
           const CompetencesSection(),
           TextButton(
             style: ButtonStyle(),
-            onPressed: () {},
+            onPressed: () {
+              html.window.open(AppConstants.cvLink, '_blank');
+            },
             child: Text(AppStrings.cv),
           )
           // const SizedBox(height: 80),
