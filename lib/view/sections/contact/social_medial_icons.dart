@@ -25,7 +25,7 @@ class SocialMediaIcons extends StatelessWidget {
           link: SocialLinks.linkedin,
         ),
         SocialMediaIconBtn(
-          icon: FontAwesomeIcons.twitter,
+          icon: FontAwesomeIcons.telegram,
           link: SocialLinks.twitter,
         ),
         SocialMediaIconBtn(
@@ -33,7 +33,7 @@ class SocialMediaIcons extends StatelessWidget {
           link: SocialLinks.twitter,
         ),
         SocialMediaIconBtn(
-          icon: FontAwesomeIcons.telegram,
+          icon: FontAwesomeIcons.twitter,
           link: SocialLinks.twitter,
         ),
         SocialMediaIconBtn(
@@ -63,7 +63,7 @@ class SocialMediaIconBtn extends StatelessWidget {
       child: Icon(
         icon,
         color: AppColors.primaryColor,
-        size: 32,
+        size: 30,
       ),
     );
   }

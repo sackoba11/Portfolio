@@ -16,9 +16,9 @@ class BasicServicesGrid extends StatelessWidget {
       physics: const NeverScrollableScrollPhysics(),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: _getCrossAxisCount(context.width),
-        crossAxisSpacing: 17,
+        crossAxisSpacing: 16,
         childAspectRatio: _getAspectRatio(context.width),
-        mainAxisSpacing: 15,
+        mainAxisSpacing: 16,
       ),
       itemBuilder: (context, index) {
         return BasicServiceItem(
@@ -34,8 +34,10 @@ class BasicServicesGrid extends StatelessWidget {
     if (deviceWidth < DeviceType.mobile.getMaxWidth()) {
       return 1;
     } else if (deviceWidth < DeviceType.ipad.getMaxWidth()) {
-      return 2;
+      return 1;
     } else if (deviceWidth < DeviceType.smallScreenLaptop.getMaxWidth()) {
+      return 2;
+    } else if (deviceWidth < DeviceType.largeScreenDesktop.getMaxWidth()) {
       return 3;
     } else {
       return numOfServices > 4 ? 4 : numOfServices;
@@ -44,13 +46,13 @@ class BasicServicesGrid extends StatelessWidget {
 
   double _getAspectRatio(double deviceWidth) {
     if (deviceWidth < DeviceType.mobile.getMinWidth()) {
-      return 1.1;
+      return 1.2;
     } else if (deviceWidth < DeviceType.ipad.getMinWidth()) {
-      return 1.4;
+      return 1.3;
     } else if (deviceWidth < DeviceType.smallScreenLaptop.getMaxWidth()) {
-      return 1.5;
+      return 1.4;
     } else {
-      return 1.6;
+      return 1.24;
     }
   }
 }

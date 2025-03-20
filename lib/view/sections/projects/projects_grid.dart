@@ -34,9 +34,11 @@ class ProjectsGrid extends StatelessWidget {
     } else if (deviceWidth < DeviceType.ipad.getMaxWidth()) {
       return 1;
     } else if (deviceWidth < DeviceType.smallScreenLaptop.getMaxWidth()) {
+      return 2;
+    } else if (deviceWidth < DeviceType.largeScreenDesktop.getMaxWidth()) {
       return 3;
     } else {
-      return numOfServices > 3 ? 3 : numOfServices;
+      return numOfServices > 4 ? 4 : numOfServices;
     }
   }
 }

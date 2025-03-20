@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:portfolio/core/models/domaine.dart';
@@ -23,10 +24,10 @@ class _BasicServiceItemState extends State<BasicServiceItem> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-          color: AppColors.secondaryColor,
-          borderRadius: BorderRadius.circular(20)),
+          color: AppColors.primaryLight,
+          borderRadius: BorderRadius.circular(8)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
@@ -39,34 +40,36 @@ class _BasicServiceItemState extends State<BasicServiceItem> {
           Expanded(
             child: GridView.builder(
               shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
               itemCount: widget.competence.competences.length,
-              gridDelegate:
-                  SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 3,
+                crossAxisSpacing: 4,
+                mainAxisSpacing: 4,
+              ),
               itemBuilder: (context, index) {
-                return Column(
-                  children: [
-                    Column(children: [
-                      SvgPicture.asset(
-                          widget.competence.competences[index].logo,
-                          height: context.height * 0.04),
-                      SizedBox(
-                        height: 3,
+                return Column(children: [
+                  Flexible(
+                    flex: 2,
+                    fit: FlexFit.tight,
+                    child: SvgPicture.asset(
+                        widget.competence.competences[index].logo,
+                        height: context.height * 0.04),
+                  ),
+                  SizedBox(
+                    height: 3,
+                  ),
+                  if (context.width > DeviceType.mobile.getMinWidth())
+                    Expanded(
+                      flex: 2,
+                      child: AutoSizeText(
+                        widget.competence.competences[index].competence,
+                        style: AppStyles.s14,
+                        textAlign: TextAlign.center,
+                        maxLines: 2,
                       ),
-                      if (context.width > DeviceType.mobile.getMinWidth())
-                        SizedBox(
-                          width: context.width > DeviceType.ipad.getMinWidth()
-                              ? context.width * 0.1
-                              : context.width * 0.2,
-                          child: Text(
-                            widget.competence.competences[index].competence,
-                            style: AppStyles.s14,
-                            textAlign: TextAlign.center,
-                            overflow: TextOverflow.ellipsis,
-                          ),
-                        ),
-                    ]),
-                  ],
-                );
+                    ),
+                ]);
               },
             ),
           )

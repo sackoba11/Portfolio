@@ -51,7 +51,7 @@ class _ContactFormState extends State<ContactForm> {
             TextFormField(
               controller: _nameController,
               style: AppStyles.s14,
-              decoration: const InputDecoration(labelText: 'Name'),
+              decoration: const InputDecoration(labelText: 'Nom'),
             ),
             const SizedBox(height: 12),
             TextFormField(
@@ -63,7 +63,7 @@ class _ContactFormState extends State<ContactForm> {
             TextFormField(
               controller: _subjectController,
               style: AppStyles.s14,
-              decoration: const InputDecoration(labelText: 'Subject'),
+              decoration: const InputDecoration(labelText: 'Sujet'),
             ),
             const SizedBox(height: 12),
             TextField(
@@ -71,12 +71,12 @@ class _ContactFormState extends State<ContactForm> {
               maxLines: 5,
               style: AppStyles.s14,
               decoration: const InputDecoration(
-                labelText: 'Type a message here...',
+                labelText: 'Description',
               ),
             ),
             const SizedBox(height: 16),
             CustomButton(
-              label: 'Submit',
+              label: 'Envoyer',
               onPressed: () {},
               backgroundColor: AppColors.primaryColor,
               width: _getFormWidth(context.width),
@@ -91,7 +91,7 @@ class _ContactFormState extends State<ContactForm> {
     if (deviceWidth < DeviceType.mobile.getMaxWidth()) {
       return deviceWidth;
     } else if (deviceWidth < DeviceType.ipad.getMaxWidth()) {
-      return deviceWidth / 1.6;
+      return deviceWidth / 1.2;
     } else if (deviceWidth < DeviceType.smallScreenLaptop.getMaxWidth()) {
       return deviceWidth / 2;
     } else {
