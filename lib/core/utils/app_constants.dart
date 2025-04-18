@@ -76,18 +76,25 @@ abstract class AppConstants {
           'https://drive.google.com/uc?id=1ITN6reINiIaM-6j3QqxrwtvADZgLNvwB',
       description:
           'A football application to display all related matches and rankings in all international and local tournaments',
-      githubRepoLink: 'https://github.com/radyhaggag/live_score',
-      previewLink: 'https://youtu.be/HSIosFd6Sys',
+      githubRepoLink: 'https://github.com/sackoba11/mobility',
+      // previewLink: 'https://youtu.be/HSIosFd6Sys',
     ),
     Project(
-      name: 'Dashboard Mobility',
+      name: 'Dashboard Mobility with Flutter',
       imageUrl:
           'https://drive.google.com/uc?id=1qNFCNYdUo7o36ythQtjaSrv7L0NV_Vnv',
       description:
           'Social media application for share posts and stories with people, One-to-one chat, Share reels videos',
-      githubRepoLink:
-          'https://github.com/radyhaggag/Instagram-Clone-With-Clean-Architecture',
-      previewLink: 'https://youtu.be/MuuVjqrR49g',
+      githubRepoLink: 'https://github.com/sackoba11/mobilitydashboard',
+      // previewLink: 'https://youtu.be/MuuVjqrR49g',
+    ),
+    Project(
+      name: 'Mobility Admin with React',
+      imageUrl:
+          'https://drive.google.com/uc?id=1yQtoq-wjVejWPXRI7gzGMXPUZrRob8kY',
+      description: 'An application to explore books and view their details.',
+      githubRepoLink: 'https://github.com/sackoba11/mobilityAdmin',
+      // previewLink: 'https://youtu.be/3nU_dYjsPsg',
     ),
     Project(
       name: 'ChatBox',
@@ -95,55 +102,54 @@ abstract class AppConstants {
           'https://drive.google.com/uc?id=1SypuIPVdokg0O4DYoYdswRowlIJAGgIq',
       description:
           'An application for download videos from tiktok and save it to gallery.',
-      githubRepoLink: 'https://github.com/radyhaggag/tiktok_downloader',
-      previewLink: 'https://youtu.be/mWeA625pcrI',
+      githubRepoLink: 'hhttps://github.com/sackoba11/chatbox',
+      // previewLink: 'https://youtu.be/mWeA625pcrI',
     ),
     Project(
-      name: 'Bookly',
-      imageUrl:
-          'https://drive.google.com/uc?id=1yQtoq-wjVejWPXRI7gzGMXPUZrRob8kY',
-      description: 'An application to explore books and view their details.',
-      githubRepoLink:
-          'https://github.com/radyhaggag/bookly_app_with_mvvm_and_bloc',
-      previewLink: 'https://youtu.be/3nU_dYjsPsg',
-    ),
-    Project(
-      name: 'Image processing',
+      name: 'Contacts',
       imageUrl:
           'https://drive.google.com/uc?id=1hd7U3HgoDqXEi9eDKYjrY9iqlWa6qt8E',
       description:
           'An Desktop program for process images and apply some filters to them.',
-      githubRepoLink:
-          'https://github.com/radyhaggag/image_processing_program_with_python_flet',
-      previewLink: 'https://youtu.be/s1KFdBKNFig',
+      githubRepoLink: 'https://github.com/sackoba11/contact',
+      // previewLink: 'https://youtu.be/s1KFdBKNFig',
     ),
     Project(
-      name: 'Salat al janazah',
+      name: 'Site web of fcda',
       imageUrl:
-          'https://drive.google.com/uc?id=1UpCGckOS46GdTuHU4wuj7Abo_97gxe_E',
+          'https://drive.google.com/uc?id=1hd7U3HgoDqXEi9eDKYjrY9iqlWa6qt8E',
       description:
-          'An application for add janazah prayer and view the prayers for nearby people',
-      googlePlay:
-          'https://play.google.com/store/apps/details?id=com.SJY.salataljanaza',
-      previewLink: 'https://youtu.be/wK9Y9BhP190',
+          'An Desktop program for process images and apply some filters to them.',
+      githubRepoLink: 'https://github.com/sackoba11/Site_web_of_fcda',
+      // previewLink: 'https://youtu.be/s1KFdBKNFig',
     ),
-    Project(
-      name: 'Ghaslah',
-      imageUrl:
-          'https://drive.google.com/uc?id=1ed4H2-cH6yk_kVkDdxOLcUkgP1xpuo72',
-      description:
-          'An application for add wash cars reservation with location in map and the picker will come to wash the cars',
-      previewLink: 'https://youtu.be/gkeRSAfCZaI',
-    ),
-    Project(
-      name: 'Zawilan',
-      imageUrl:
-          'https://drive.google.com/uc?id=1ElTwguynMLqhS295-IE7bTTabsZGZp8s',
-      description:
-          'Zwailan is an education app based on units and sections system, you start by sign up on app and wait until the teacher accept your join request.',
-      previewLink: 'https://youtu.be/g92W-SmfkKc',
-      googlePlay:
-          'https://play.google.com/store/apps/details?id=com.radyhaggag.zawilan',
-    ),
+    // Project(
+    //   name: 'Salat al janazah',
+    //   imageUrl:
+    //       'https://drive.google.com/uc?id=1UpCGckOS46GdTuHU4wuj7Abo_97gxe_E',
+    //   description:
+    //       'An application for add janazah prayer and view the prayers for nearby people',
+    //   googlePlay:
+    //       'https://play.google.com/store/apps/details?id=com.SJY.salataljanaza',
+    //   previewLink: 'https://youtu.be/wK9Y9BhP190',
+    // ),
+    // Project(
+    //   name: 'Ghaslah',
+    //   imageUrl:
+    //       'https://drive.google.com/uc?id=1ed4H2-cH6yk_kVkDdxOLcUkgP1xpuo72',
+    //   description:
+    //       'An application for add wash cars reservation with location in map and the picker will come to wash the cars',
+    //   previewLink: 'https://youtu.be/gkeRSAfCZaI',
+    // ),
+    // Project(
+    //   name: 'Zawilan',
+    //   imageUrl:
+    //       'https://drive.google.com/uc?id=1ElTwguynMLqhS295-IE7bTTabsZGZp8s',
+    //   description:
+    //       'Zwailan is an education app based on units and sections system, you start by sign up on app and wait until the teacher accept your join request.',
+    //   previewLink: 'https://youtu.be/g92W-SmfkKc',
+    //   googlePlay:
+    //       'https://play.google.com/store/apps/details?id=com.radyhaggag.zawilan',
+    // ),
   ];
 }

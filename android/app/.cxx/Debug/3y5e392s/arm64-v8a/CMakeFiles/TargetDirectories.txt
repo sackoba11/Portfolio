@@ -1,0 +1,2 @@
+/home/sackoba/Documents/perso/Portfolio/android/app/.cxx/Debug/3y5e392s/arm64-v8a/CMakeFiles/edit_cache.dir
+/home/sackoba/Documents/perso/Portfolio/android/app/.cxx/Debug/3y5e392s/arm64-v8a/CMakeFiles/rebuild_cache.dir
